@@ -3684,9 +3684,9 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
 
   // main.js
   ho();
-  loadSprite("bean", "assets/Link_LA.png");
-  add([
-    sprite("bean"),
+  loadSprite("link", "assets/Link_LA.png");
+  var link = add([
+    sprite("link"),
     pos(80, 40)
   ]);
 })();

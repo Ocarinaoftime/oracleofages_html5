@@ -1,2 +1,6 @@
 #!/bin/bash
-shell-interval -t 2 -c "esbuild main.js --bundle > build.js" -e 
+inotifywait -r -m -e modify /home/ocarina/OOAHTML5 |
+    while read file_path file_event file_name; do
+        npm run build
+    done
+ 

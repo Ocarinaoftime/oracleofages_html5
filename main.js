@@ -1,9 +1,12 @@
 import kaboom from "./node_modules/kaboom/dist/kaboom.mjs";
+import "./node_modules/kaboom/dist/kaboom.mjs";
 
 
-loadSprite("bean", "assets/Link_LA.png")
+kaboom()
 
-add([
-    sprite("bean"),
+loadSprite("link", "assets/Link_LA.png")
+
+const link = add([
+    sprite("link"),
     pos(80, 40)
 ]);
